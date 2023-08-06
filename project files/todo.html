@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-va-campatibla"contant="IE=edge">
+        <meta name="viewport"content="width=device.width,initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>TODO APP</title>
+        <link href="sheet.css"rel="stylesheet"/>
+        <script src="main.js"defer></script>
+    </head>
+    <body onload="time()" >
+        <div class ="todo-container">
+            <div class="date-hour">
+                <p id="date">Date</p>
+                <p id="hour">Hour</p>
+            </div>
+            
+            <header>
+                <h1> TODO list</h1>
+                </header>
+                <!-- Add Todo -->
+                <form action="" id="todo-form">
+                    <p>Add Your Task Here</p>
+                    <div class="form-control">
+                        <input type="text" id="todo-input" placeholder="Type here about your next task">
+                          <button type="submit">
+                              <i class="select">Enter</i>
+                           </button>
+                     </div>
+                </form>
+                <!-- Edit The Todos -->
+                <form action="" id="edit-form" class="hide">
+                    <p>Edit Your Task Here</p>
+                    <div class="form-control">
+                        <input type="text" id="edit-input" placeholder="Type here about your next task">
+                          <button type="submit">
+                              <i class="select">Enter</i>
+                           </button>
+                     </div>
+                     <button type="button" id="cancel-edit-btn">Cancel</button>
+                </form>
+              
+                <!---task list --->
+                <div class="todo-list" id="todo-list">
+                    <div class="todo">
+                        <h3>Some Default Task</h3>
+                        <button class="finished-todo">
+                            <i class="check">Check</i>
+                        </button>
+                        <button class="edit-todo">
+                            <i class="edit">Edit</i>
+                        </button>
+                          <button class="remove-todo">
+                            <i class="remove">Delete</i>
+                          </button>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
